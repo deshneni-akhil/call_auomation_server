@@ -12,3 +12,7 @@ Welcome to the Call Automation Server repository. This repository consists of mu
 The diagram below presents an overview of the solution's architecture:
 
 ![High-Level Architecture](./Voice-assistant.png)
+
+## Feedback and Contributions
+
+Feedback is welcome and open source contributions are encouraged!
