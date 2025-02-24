@@ -15,7 +15,7 @@ This application leverages Azure Communication Services to establish a WebSocket
 ## Setting up sample on local environment
 
 1. Clone the repository using:  
-    git clone `https://github.com/Azure-Samples/communication-services.git`.
+    git clone `https://github.com/deshneni-akhil/call_auomation_server.git`.
 2. This monorepo contains both the IncomingCallHandler and VoiceRAGAI applications.
 3. For this setup, navigate to the IncomingCallHandler directory.
 

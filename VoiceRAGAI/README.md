@@ -5,7 +5,6 @@ This application leverages voice as the primary input for RAG solution, powered 
 * [Features](#features)
 * [Architecture Diagram](#architecture-diagram)
 * [Getting Started](#getting-started)
-  * [GitHub Codespaces](#github-codespaces)
   * [VS Code Dev Containers](#vs-code-dev-containers)
   * [Local environment](#local-environment)
 * [Deploying the app](#deploying-the-app)
@@ -36,7 +35,7 @@ You can run the project in your local VS Code Dev Container using the [Dev Conta
 1. Start Docker Desktop (install it if not already installed)
 2. Open the project:
 
-    [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/aisearch-openai-rag-audio)
+    [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/deshneni-akhil/call_auomation_server/VoiceRAGAI)
 3. In the VS Code window that opens, once the project files show up (this may take several minutes), open a new terminal, and proceed to [deploying the app](#deploying-the-app).
 
 ### Local environment
@@ -47,7 +46,7 @@ You can run the project in your local VS Code Dev Container using the [Dev Conta
       * **Important**: Python and the pip package manager must be in the path in Windows for the setup scripts to work.
       * **Important**: Ensure you can run `python --version` from console. On Ubuntu, you might need to run `sudo apt install python-is-python3` to link `python` to `python3`.
 
-2. Clone the repo (`git clone https://github.com/Azure-Samples/aisearch-openai-rag-audio`)
+2. Clone the repo (`git clone https://github.com/deshneni-akhil/call_auomation_server.git`)
 3. Proceed to the next section to [deploy the app](#deploying-the-app).
 
 ## Deploying the app
