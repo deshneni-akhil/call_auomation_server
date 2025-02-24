@@ -1,0 +1,26 @@
+[tool.ruff]
+target-version = "py312"
+lint.select = ["E", "F", "I", "UP"]
+lint.ignore = ["E501", "E701"]
+src = ["app/backend"]
+
+[tool.poetry]
+name = "aisearch-openai-rag-audio"
+version = "0.1.0"
+description = "A project for OpenAI RAG audio search"
+authors = ["Akhil Deshneni <AZ-ITS-ADeshneni@csulb.onmicrosoft.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "1.0.1"
+aiohttp = "3.9.3"
+azure-identity = "1.18.0"
+azure-search-documents = "11.6.0b4"
+azure-storage-blob = "12.23.1"
+gunicorn = "*"
+rich = "*"
+pydub = "*"
+
+[tool.poetry.scripts]
+start-server = "gunicorn app:create_app -b 0.0.0.0:8000 --worker-class aiohttp.GunicornWebWorker"
