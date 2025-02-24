@@ -1,0 +1,6 @@
+fastapi[standard]
+websockets==14.2
+python-dotenv==1.0.1
+azure-core==1.32.0
+azure-communication-callautomation==1.4.0b1
+azure-eventgrid==4.21.0

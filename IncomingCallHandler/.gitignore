@@ -1,0 +1,41 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+.env.test
+.env.dev
+
+# IDE and editor settings
+.idea/
+.vscode/
+
+# Custom scripts
+startup.sh
+
+# custom files
+sound_effects/
