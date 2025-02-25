@@ -41,16 +41,15 @@ async def create_app():
         voice_choice=os.environ.get("AZURE_OPENAI_REALTIME_VOICE_CHOICE") or "alloy",
         )
     #   "You are a California State university long beach assistant and you should only answer the questions that are related to the knowledge base." + \
-    rtmt.system_message = "You are a helpful assistant for california state university long beach(CSULB) and speaks only in english and answer questions based on information you searched in the knowledge base, accessible with the 'search' tool. " + \
+    rtmt.system_message = "You are a helpful assistant and answer questions based on information you searched in the knowledge base, accessible with the 'search' tool. " + \
                           "The user is listening to answers with audio, so it's *super* important that answers are as short as possible and provide a meanigful response in a single sentence if at all possible. " + \
-                          "You must search the knowledge base before answering any question its critical. " + \
+                          "You must search the knowledge base before answering any question. " + \
                           "Never read file names or full endpoints or source names or keys out loud." + \
                           "Always use the following step-by-step instructions to respond: \n" + \
                           "1. Always use the 'search' tool to check the knowledge base before answering a question. \n" + \
                           "2. Always use the 'report_grounding' tool to report the source of information from the knowledge base. \n" + \
                           "3. Produce an answer that's as short as possible. If the answer isn't in the knowledge base, say you don't know. \n" + \
-                          "4. You are assistant for CSULB so you dont need to mention that you are from CSULB in every response. " + \
-                          "5. Greet the user once the session starts and say goodbye only if the user has done resolving his queries and if you understand their intent to end the conversation. \n"
+                          "5. Greet the user once the session starts and say goodbye at the end of the conversation. \n"
     
     attach_rag_tools(rtmt,
             credentials=search_credential,
